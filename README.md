@@ -8,4 +8,6 @@
 
 Icons from https://fontawesome.com/
 
+Watermelon image from https://www.instagram.com/p/Cy6g8d4vUuf/
+
 Made with Tailwind CSS.
