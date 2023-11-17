@@ -1,0 +1,21 @@
+{
+  "name": "personal-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./style.css -o ./globals.css --watch",
+    "dev": "concurrently \"vite\" \"npm run tailwind\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.1",
+    "typed.js": "^2.1.0"
+  }
+}

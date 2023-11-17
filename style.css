@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Numans', sans-serif;
+        @apply bg-[#0A0F1A] text-white p-10;
+    }
+
+    h1 {
+        font-family: 'Nixie One', sans-serif;
+    }
+}
+
+@layer components {
+    .card {
+        @apply bg-gray-950 text-white rounded-3xl mb-6 lg:mb-0 border border-gray-900;
+    }
+
+    .ava img {
+        @apply rounded-full border-zinc-900 hover:border-zinc-950 border-4;
+    }
+
+    .btn {
+        @apply py-2 px-6 border-zinc-500 bg-transparent hover:bg-white hover:text-black border rounded-full transition-all duration-200 ease-linear;
+    }
+
+    .blurr {
+        @apply bg-indigo-700;
+        width: 80px;
+        height: 80px;
+        filter: blur(70px);
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper-content {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.username {
+    font-weight: 400;
+}
+
+.grad {
+    transition: all .3s ease-in;
+    animation: btn-animation 5s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes btn-animation {
+    0% {
+        background-position:0% 50%
+    }
+
+    50% {
+        background-position:100% 50%
+    }
+
+    100% {
+        background-position:0% 50%
+    }
+}
+
+.ring-container {
+    width: 15px;
+    height: 15px;
+    left: 10px;
+    top: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #62bd19;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ringring {
+    border: 3px solid #62bd19;
+    border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+@keyframes pulsate {
+    0% {transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0.0;}
+}
