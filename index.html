@@ -44,21 +44,21 @@
       </div>
       <div
         class="card order-3 lg:order-none relative z-10">
-        <div class="x-profile">
-          <div class="x-profile__header">
-            <img src="public/x.png" alt=""/>
+        <div class="transition-smooth bg-gray-950 hover:bg-zinc-900 hover:border-gray-900 text-white rounded-3xl">
+          <div class="flex items-center gap-2 p-4">
+            <img class="w-10" src="public/x.png" alt=""/>
             <span>Profile</span>
           </div>
           <!-- watermelon image source: https://www.instagram.com/p/Cy6g8d4vUuf/ -->
-          <div class="x-profile__bg bg-[url(public/watermelon-palestine.jpeg)]">
-            <div class="x-profile__ava">
-              <img src="public/me-ai.png" alt=""/>
+          <div class="bg-[url(public/watermelon-palestine.jpeg)] bg-cover bg-no-repeat h-40 lg:h-32 relative px-3">
+            <div class="absolute -bottom-11">
+              <img class="w-[85px] rounded-full border-zinc-900 hover:border-zinc-950 border-4" src="public/me-ai.png" alt=""/>
             </div>
           </div>
-          <div class="x-profile__actions">
+          <div class="text-right px-3 pt-4 pb-2">
             <a href="#" class="btn">Follow</a>
           </div>
-          <div class="x-profile__details p-4">
+          <div class="p-4">
             <h2 class="text-xl">Nurul Insani Dewi 🪴</h2>
             <p class="text-zinc-400">@nurul</p>
             <p class="text-zinc-600">Just an ordinary person.</p>
@@ -77,10 +77,13 @@
       </div>
       <div class="card bg-grad-black-indigo transition-smooth delay-50 order-2 lg:order-none h-48 lg:h-auto p-4 relative overflow-hidden">
         <div class="flex flex-col justify-between h-full">
-          <div class="available">
-            <div class="pulse-circle">
-              <span class="pulse"></span>
-            </div>
+          <div class="available-label">
+            <!-- pulse/ping circle -->
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+            <!-- end of: pulse/ping circle -->
             <span class="text-sm">Now available for work</span>
           </div>
           <h2 class="text-5xl lg:text-4xl text-zinc-400 text-right">

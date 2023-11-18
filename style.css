@@ -34,6 +34,7 @@
   .btn-primary {
     @apply bg-emerald-600 hover:bg-emerald-400 text-gray-950 font-semibold;
   }
+
   .title-border {
     @apply px-4 py-2 rounded-3xl border border-indigo-900 w-auto text-xs text-indigo-500;
   }
@@ -50,12 +51,8 @@
     @apply h-full w-full flex flex-col justify-between bg-gray-950 text-white rounded-2xl p-6;
   }
 
-  .available {
+  .available-label {
     @apply inline-flex gap-3 items-center py-2 px-5 bg-gray-900 rounded-full w-[250px];
-  }
-
-  .bg-grad-black-indigo {
-    @apply bg-gradient-to-l from-indigo-900 border-black border-2 hover:border-indigo-950 hover:from-indigo-800;
   }
 
   .link-full {
@@ -78,40 +75,16 @@
     @apply transition duration-500 ease-linear;
   }
 
+  .bg-grad-black-indigo {
+    @apply bg-gradient-to-l from-indigo-900 border-black border-2 hover:border-indigo-950 hover:from-indigo-800;
+  }
+
   .bg-backdrop-gradient {
     @apply bg-gradient-to-r from-indigo-500 from-10% via-emerald-700 via-30% to-sky-800 to-80%;
   }
 
   .bg-backdrop-blur {
     @apply backdrop-blur-xl bg-white/20 p-5 rounded-3xl;
-  }
-
-  .x-profile {
-    @apply transition-smooth bg-gray-950 hover:bg-zinc-900 hover:border-gray-900 text-white rounded-3xl;
-  }
-
-  .x-profile__header {
-    @apply flex items-center gap-2 p-4;
-  }
-
-  .x-profile__header img {
-    @apply w-10;
-  }
-
-  .x-profile__bg {
-    @apply bg-cover bg-no-repeat h-40 lg:h-32 relative px-3;
-  }
-
-  .x-profile__ava {
-    @apply absolute -bottom-11;
-  }
-
-  .x-profile__ava img{
-    @apply w-[85px] rounded-full border-zinc-900 hover:border-zinc-950 border-4;
-  }
-
-  .x-profile__actions {
-    @apply text-right px-3 pt-4 pb-2;
   }
 }
 
@@ -132,40 +105,5 @@
 
   100% {
     background-position: 0% 50%;
-  }
-}
-
-.pulse-circle {
-  width: 15px;
-  height: 15px;
-  background-color: #62bd19;
-  border-radius: 50%;
-  position: relative;
-}
-
-.pulse {
-  border: 3px solid #62bd19;
-  border-radius: 30px;
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  animation: pulsate 1s ease-out;
-  animation-iteration-count: infinite;
-  opacity: 0;
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2, 1.2);
-    opacity: 0;
   }
 }
