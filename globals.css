@@ -667,6 +667,7 @@ button {
   --tw-gradient-via-position: 30%;
   --tw-gradient-to: #1f2937 var(--tw-gradient-to-position);
   --tw-gradient-to-position: 90%;
+  background-size: 300% 300%;
   padding: 1px;
 }
 
@@ -971,6 +972,34 @@ button {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes bgWaves {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bgWaves {
+  animation: bgWaves 5s ease-in-out infinite;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1032,6 +1061,11 @@ button {
 .border-gray-900 {
   --tw-border-opacity: 1;
   border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.border-gray-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(3 7 18 / var(--tw-border-opacity));
 }
 
 .border-zinc-900 {
@@ -1200,24 +1234,8 @@ button {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.bg-animation {
-  transition: all 0.3s ease-in;
-  animation: bg-position-animation 5s ease infinite;
-  background-size: 300% 300%;
-}
-
-@keyframes bg-position-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+.hover\:animate-none:hover {
+  animation: none;
 }
 
 .hover\:border-gray-900:hover {

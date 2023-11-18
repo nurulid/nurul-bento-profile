@@ -44,7 +44,7 @@
   }
 
   .border-gradient {
-    @apply bg-gradient-to-r from-emerald-500 from-10% via-indigo-500 via-30% to-gray-800 to-90% p-0.5;
+    @apply bg-gradient-to-r from-emerald-500 from-10% via-indigo-500 via-30% to-gray-800 to-90% p-0.5 bg-[length:300%_300%];;
   }
   
   .border-gradient__box {
@@ -85,25 +85,5 @@
 
   .bg-backdrop-blur {
     @apply backdrop-blur-xl bg-white/20 p-5 rounded-3xl;
-  }
-}
-
-.bg-animation {
-  transition: all 0.3s ease-in;
-  animation: bg-position-animation 5s ease infinite;
-  background-size: 300% 300%;
-}
-
-@keyframes bg-position-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
   }
 }

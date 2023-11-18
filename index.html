@@ -20,9 +20,9 @@
       </h1>
     </section>
     <section class="flex flex-col lg:grid grid-cols-3 gap-4 lg:gap-5">
-      <div class="card order-1 lg:order-none col-span-2">
+      <div class="card order-1 lg:order-none col-span-2 border-gray-950">
         <div
-          class="border-gradient bg-animation h-full w-full rounded-2xl">
+          class="border-gradient animate-bgWaves h-full w-full rounded-2xl">
           <div class="border-gradient__box">
             <div>
               <span class="title-border">About me</span>
@@ -43,8 +43,8 @@
         </div>
       </div>
       <div
-        class="card order-3 lg:order-none relative z-10">
-        <div class="transition-smooth bg-gray-950 hover:bg-zinc-900 hover:border-gray-900 text-white rounded-3xl">
+        class="card order-3 lg:order-none">
+        <div class="transition-smooth bg-gray-950 hover:bg-zinc-900 hover:border-gray-900 text-white rounded-3xl relative z-10">
           <div class="flex items-center gap-2 p-4">
             <img class="w-10" src="public/x.png" alt=""/>
             <span>Profile</span>
@@ -66,11 +66,11 @@
         </div>
       </div>
       <div class="card order-5 lg:order-none row-span-3 relative overflow-hidden p-8">
-        <div class="h-full w-full mx-auto flex items-center">
+        <div class="h-full w-full mx-auto flex items-center animate-pulse hover:animate-none relative z-10">
           <div class="space-y-4 w-full text-center">
             <h2 class="text-xl">Do you want more confetti?</h2>
             <button id="appreciate"
-              class="btn-primary transition-smooth relative z-10 shadow-2xl  shadow-zinc-500 hover:shadow-zinc-600">Click this button</button>
+              class="btn-primary transition-smooth shadow-2xl shadow-zinc-500 hover:shadow-zinc-600">Click this button</button>
           </div>
         </div>
         <div class="circle-blur rounded-3xl top-0 left-0 w-32"></div>
