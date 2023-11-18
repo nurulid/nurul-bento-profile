@@ -63,14 +63,6 @@
     @apply w-20 h-20 bg-indigo-700 absolute right-3 bottom-3 blur-[70px];
   }
 
-  .portfolio-item {
-    @apply h-28 w-full overflow-hidden shadow-lg -rotate-3 transition-smooth;
-  }
-
-  .portfolio-wrapper:hover .portfolio-item {
-    @apply rotate-3;
-  }
-
   .transition-smooth {
     @apply transition duration-500 ease-linear;
   }
