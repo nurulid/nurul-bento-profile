@@ -8,8 +8,13 @@ const typed = new Typed("#intro", {
 });
 
 const appreciateBtn = document.getElementById("appreciate");
+const myCanvas = document.createElement("canvas");
+const myConfetti = confetti.create(myCanvas, {
+  resize: true,
+  useWorker: true,
+});
+
 appreciateBtn.addEventListener("click", () => {
-  const myCanvas = document.createElement("canvas");
   myCanvas.style.position = "fixed";
   myCanvas.style.inset = 0;
   myCanvas.style.width = "100vw";
@@ -17,10 +22,6 @@ appreciateBtn.addEventListener("click", () => {
   myCanvas.style.zIndex = 1;
   document.body.appendChild(myCanvas);
 
-  const myConfetti = confetti.create(myCanvas, {
-    resize: true,
-    useWorker: true,
-  });
   myConfetti({
     particleCount: 100,
     startVelocity: 30,
@@ -37,28 +38,26 @@ appreciateBtn.addEventListener("click", () => {
 var duration = 1 * 1000;
 var end = Date.now() + duration;
 
-// setTimeout(function() {
-  (function frame() {
-    // launch a few confetti from the left edge
-    confetti({
-      particleCount: 7,
-      angle: 60,
-      spread: 55,
-      origin: { x: 0 }
-    });
-    // and launch a few from the right edge
-    confetti({
-      particleCount: 7,
-      angle: 120,
-      spread: 55,
-      origin: { x: 1 }
-    });
+(function frame() {
+  // launch a few confetti from the left edge
+  confetti({
+    particleCount: 7,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 }
+  });
+  // and launch a few from the right edge
+  confetti({
+    particleCount: 7,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 }
+  });
 
-    // keep going until we are out of time
-    if (Date.now() < end) {
-        requestAnimationFrame(frame);
-      }
-  }
-  ());
-// }, duration);
+  // keep going until we are out of time
+  if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+}());
+
 
