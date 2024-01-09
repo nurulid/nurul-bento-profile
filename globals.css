@@ -687,7 +687,7 @@ button {
 
 .available-label {
   display: inline-flex;
-  width: 250px;
+  width: auto;
   align-items: center;
   gap: 0.75rem;
   border-radius: 9999px;
@@ -775,6 +775,16 @@ button {
 
 .relative {
   position: relative;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
 }
 
 .-bottom-11 {
@@ -880,6 +890,10 @@ button {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -1009,6 +1023,10 @@ button {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1245,6 +1263,10 @@ button {
 .hover\:bg-zinc-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.hover\:opacity-10:hover {
+  opacity: 0.1;
 }
 
 .hover\:shadow-zinc-600:hover {
