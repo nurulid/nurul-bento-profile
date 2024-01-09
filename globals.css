@@ -892,16 +892,16 @@ button {
   margin-top: 2rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
 
 .inline-flex {
   display: inline-flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-28 {
@@ -1265,10 +1265,6 @@ button {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
-.hover\:opacity-10:hover {
-  opacity: 0.1;
-}
-
 .hover\:shadow-zinc-600:hover {
   --tw-shadow-color: #52525b;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1279,9 +1275,27 @@ button {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:order-none {
     order: 0;
+  }
+
+  .lg\:row-span-3 {
+    grid-row: span 3 / span 3;
   }
 
   .lg\:mt-0 {
