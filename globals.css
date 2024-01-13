@@ -847,10 +847,6 @@ button {
   grid-row: span 2 / span 2;
 }
 
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -898,10 +894,6 @@ button {
 
 .inline-flex {
   display: inline-flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-28 {
@@ -995,10 +987,6 @@ button {
 
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1212,6 +1200,10 @@ button {
   color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
+.line-through {
+  text-decoration-line: line-through;
+}
+
 .opacity-20 {
   opacity: 0.2;
 }
@@ -1300,10 +1292,6 @@ button {
 
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:grid {
-    display: grid;
   }
 
   .lg\:h-32 {
