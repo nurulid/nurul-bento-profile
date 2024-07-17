@@ -1,4 +1,4 @@
-# Nurul Personal Website
+# Nurul Bento Profile
 
 ## Design sources reference:
 - https://dribbble.com/shots/22902217-Bento-CV-Framer-Template
